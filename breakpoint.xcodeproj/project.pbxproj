@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		100D2E54B94AE933274D4862 /* Pods_breakpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DED28FF5016AF83477350 /* Pods_breakpoint.framework */; };
+		B520514B224AF25C003D5505 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520514A224AF25C003D5505 /* DataService.swift */; };
 		B5EA8591224924F0000DEB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8590224924F0000DEB8F /* AppDelegate.swift */; };
 		B5EA8593224924F0000DEB8F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8592224924F0000DEB8F /* FirstViewController.swift */; };
 		B5EA8595224924F0000DEB8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8594224924F0000DEB8F /* SecondViewController.swift */; };
@@ -21,6 +22,7 @@
 		006DED28FF5016AF83477350 /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74469DEC005022ECCE8DE66E /* Pods-breakpoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.release.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.release.xcconfig"; sourceTree = "<group>"; };
 		9D567533E0F84B13E1D6D799 /* Pods-breakpoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakpoint.debug.xcconfig"; path = "Target Support Files/Pods-breakpoint/Pods-breakpoint.debug.xcconfig"; sourceTree = "<group>"; };
+		B520514A224AF25C003D5505 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B5EA858D224924F0000DEB8F /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EA8590224924F0000DEB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5EA8592224924F0000DEB8F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 				9D567533E0F84B13E1D6D799 /* Pods-breakpoint.debug.xcconfig */,
 				74469DEC005022ECCE8DE66E /* Pods-breakpoint.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +132,7 @@
 		B5EA85A82249260A000DEB8F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B520514A224AF25C003D5505 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -265,6 +267,7 @@
 				B5EA8595224924F0000DEB8F /* SecondViewController.swift in Sources */,
 				B5EA8591224924F0000DEB8F /* AppDelegate.swift in Sources */,
 				B5EA8593224924F0000DEB8F /* FirstViewController.swift in Sources */,
+				B520514B224AF25C003D5505 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
