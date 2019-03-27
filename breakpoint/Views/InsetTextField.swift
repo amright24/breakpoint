@@ -20,15 +20,15 @@ class InsetTextField: UITextField {
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        return UIEdgeInsetsInsetRect(bounds, padding)
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        return UIEdgeInsetsInsetRect(bounds, padding)
     }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        return UIEdgeInsetsInsetRect(bounds, padding)
         
     }
 

@@ -1,8 +1,8 @@
 //
-//  AuthService.swift
+//  AuthServices.swift
 //  breakpoint
 //
-//  Created by Austin Rightnowar on 3/26/19.
+//  Created by Austin Rightnowar on 3/27/19.
 //  Copyright © 2019 Austin Rightnowar. All rights reserved.
 //
 
@@ -19,8 +19,9 @@ class AuthService {
                 return
             }
             
-            let userData = ["provider": authDataResult.user.providerID, "email" : authDataResult.user.email]
-            DataService.instance.createDBUser(uid: authDataResult.user.uid, userData: userData)
+            
+            let userData = ["provider": Auth.auth().currentUser?.providerData, "email" : Auth.auth().currentUser?.email] as [String : Any]
+            DataService.instance.createDBUser(uid: (Auth.auth().currentUser?.uid)!, userData: userData)
             userCreationComplete(true, nil)
         }
     }
@@ -29,6 +30,7 @@ class AuthService {
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             guard let user = user else {
                 loginComplete(false, error)
+                return
             }
             
             loginComplete(true, nil)
