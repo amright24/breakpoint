@@ -15,8 +15,8 @@
 		B5205155224B1217003D5505 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5205154224B1217003D5505 /* ShadowView.swift */; };
 		B58CB7AD224BC996003A2258 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7AC224BC996003A2258 /* AuthServices.swift */; };
 		B5EA8591224924F0000DEB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8590224924F0000DEB8F /* AppDelegate.swift */; };
-		B5EA8593224924F0000DEB8F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8592224924F0000DEB8F /* FirstViewController.swift */; };
-		B5EA8595224924F0000DEB8F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8594224924F0000DEB8F /* SecondViewController.swift */; };
+		B5EA8593224924F0000DEB8F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8592224924F0000DEB8F /* FeedVC.swift */; };
+		B5EA8595224924F0000DEB8F /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8594224924F0000DEB8F /* GroupsVC.swift */; };
 		B5EA8598224924F0000DEB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EA8596224924F0000DEB8F /* Main.storyboard */; };
 		B5EA859A224924F1000DEB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EA8599224924F1000DEB8F /* Assets.xcassets */; };
 		B5EA859D224924F1000DEB8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EA859B224924F1000DEB8F /* LaunchScreen.storyboard */; };
@@ -35,8 +35,8 @@
 		B58CB7AC224BC996003A2258 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		B5EA858D224924F0000DEB8F /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EA8590224924F0000DEB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5EA8592224924F0000DEB8F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		B5EA8594224924F0000DEB8F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B5EA8592224924F0000DEB8F /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B5EA8594224924F0000DEB8F /* GroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		B5EA8597224924F0000DEB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5EA8599224924F1000DEB8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5EA859C224924F1000DEB8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 		B5EA85A4224925A4000DEB8F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B5EA8592224924F0000DEB8F /* FirstViewController.swift */,
-				B5EA8594224924F0000DEB8F /* SecondViewController.swift */,
+				B5EA8592224924F0000DEB8F /* FeedVC.swift */,
+				B5EA8594224924F0000DEB8F /* GroupsVC.swift */,
 				B520514E224B0C01003D5505 /* AuthVC.swift */,
 				B5205150224B0C20003D5505 /* LoginVC.swift */,
 			);
@@ -280,11 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B520514F224B0C01003D5505 /* AuthVC.swift in Sources */,
-				B5EA8595224924F0000DEB8F /* SecondViewController.swift in Sources */,
+				B5EA8595224924F0000DEB8F /* GroupsVC.swift in Sources */,
 				B5205151224B0C20003D5505 /* LoginVC.swift in Sources */,
 				B5EA8591224924F0000DEB8F /* AppDelegate.swift in Sources */,
 				B5205155224B1217003D5505 /* ShadowView.swift in Sources */,
-				B5EA8593224924F0000DEB8F /* FirstViewController.swift in Sources */,
+				B5EA8593224924F0000DEB8F /* FeedVC.swift in Sources */,
 				B58CB7AD224BC996003A2258 /* AuthServices.swift in Sources */,
 				B5205153224B0CD5003D5505 /* InsetTextField.swift in Sources */,
 				B520514B224AF25C003D5505 /* DataService.swift in Sources */,
