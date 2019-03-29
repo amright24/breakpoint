@@ -23,7 +23,7 @@ class DataService {
         return _REF_BASE
     }
     
-    var REF_USER: DatabaseReference {
+    var REF_USERS: DatabaseReference {
         return _REF_USERS
     }
     
@@ -36,7 +36,18 @@ class DataService {
     }
     
     func createDBUser(uid: String, userData: Dictionary<String, Any>) {
-        REF_USER.child(uid).updateChildValues(userData)
+        REF_USERS.child(uid).updateChildValues(userData) as? NSString
+    }
+    
+    func getUsername(forUID uid: String, handler: @escaping (_ username: String) -> ()) {
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return }
+            for user in userSnapshot {
+                if user.key == uid {
+                    handler(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
     }
     
     func uploadPost(withMessage message: String, forUID uid: String, withGroupKey groupKey: String?, sendComplete: @escaping (_ status: Bool) -> ()) {
