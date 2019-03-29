@@ -24,7 +24,7 @@ class LoginVC: UIViewController {
     // A C T I O N S ------------------------------------------------
     @IBAction func signInBtnWasPressed(_ sender: Any) {
         if emailField.text != nil && passwordField.text != nil {
-            AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordField.text!) { (success, loginError) in
+            AuthService.instance.loginUser(withEmail: emailField.text!, andPassword: passwordField.text!, loginComplete: { (success, loginError) in
                 if success {
                     self.dismiss(animated: true, completion: nil)
                     print("logged in SUCCESS!")
@@ -41,7 +41,7 @@ class LoginVC: UIViewController {
                         print(String(describing: registrationError?.localizedDescription))
                     }
                 })
-            }
+            })
         }
     }
     @IBAction func closeBtnWasPressed(_ sender: Any) {
