@@ -13,9 +13,13 @@
 		B5205151224B0C20003D5505 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5205150224B0C20003D5505 /* LoginVC.swift */; };
 		B5205153224B0CD5003D5505 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5205152224B0CD5003D5505 /* InsetTextField.swift */; };
 		B5205155224B1217003D5505 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5205154224B1217003D5505 /* ShadowView.swift */; };
+		B546292D22517AAF006CE613 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546292C22517AAF006CE613 /* GroupFeedCell.swift */; };
+		B546292F22517B26006CE613 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546292E22517B26006CE613 /* GroupFeedVC.swift */; };
 		B57CD44E224E7F8F0099754F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CD44D224E7F8F0099754F /* Message.swift */; };
 		B57CD450224EB03C0099754F /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CD44F224EB03C0099754F /* CreateGroupsVC.swift */; };
 		B57CD452224EB4850099754F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CD451224EB4850099754F /* UserCell.swift */; };
+		B57CD454225166060099754F /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CD453225166060099754F /* GroupCell.swift */; };
+		B57CD45622516B270099754F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57CD45522516B270099754F /* Group.swift */; };
 		B58CB7AD224BC996003A2258 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7AC224BC996003A2258 /* AuthServices.swift */; };
 		B58CB7AF224CFC43003A2258 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7AE224CFC43003A2258 /* MeVC.swift */; };
 		B58CB7B1224D01C9003A2258 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7B0224D01C9003A2258 /* CreatePostVC.swift */; };
@@ -39,9 +43,13 @@
 		B5205150224B0C20003D5505 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B5205152224B0CD5003D5505 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		B5205154224B1217003D5505 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		B546292C22517AAF006CE613 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		B546292E22517B26006CE613 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		B57CD44D224E7F8F0099754F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B57CD44F224EB03C0099754F /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		B57CD451224EB4850099754F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B57CD453225166060099754F /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		B57CD45522516B270099754F /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		B58CB7AC224BC996003A2258 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		B58CB7AE224CFC43003A2258 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		B58CB7B0224D01C9003A2258 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 				B58CB7AE224CFC43003A2258 /* MeVC.swift */,
 				B58CB7B0224D01C9003A2258 /* CreatePostVC.swift */,
 				B57CD44F224EB03C0099754F /* CreateGroupsVC.swift */,
+				B546292E22517B26006CE613 /* GroupFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +153,8 @@
 				B5205154224B1217003D5505 /* ShadowView.swift */,
 				B58CB7B4224D34C3003A2258 /* FeedCell.swift */,
 				B57CD451224EB4850099754F /* UserCell.swift */,
+				B57CD453225166060099754F /* GroupCell.swift */,
+				B546292C22517AAF006CE613 /* GroupFeedCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B57CD44D224E7F8F0099754F /* Message.swift */,
+				B57CD45522516B270099754F /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,11 +315,15 @@
 				B58CB7B3224D0D07003A2258 /* UIViewExt.swift in Sources */,
 				B58CB7B5224D34C3003A2258 /* FeedCell.swift in Sources */,
 				B58CB7AF224CFC43003A2258 /* MeVC.swift in Sources */,
+				B57CD454225166060099754F /* GroupCell.swift in Sources */,
 				B520514F224B0C01003D5505 /* AuthVC.swift in Sources */,
 				B5EA8595224924F0000DEB8F /* GroupsVC.swift in Sources */,
+				B546292F22517B26006CE613 /* GroupFeedVC.swift in Sources */,
+				B546292D22517AAF006CE613 /* GroupFeedCell.swift in Sources */,
 				B5205151224B0C20003D5505 /* LoginVC.swift in Sources */,
 				B5EA8591224924F0000DEB8F /* AppDelegate.swift in Sources */,
 				B57CD450224EB03C0099754F /* CreateGroupsVC.swift in Sources */,
+				B57CD45622516B270099754F /* Group.swift in Sources */,
 				B57CD452224EB4850099754F /* UserCell.swift in Sources */,
 				B5205155224B1217003D5505 /* ShadowView.swift in Sources */,
 				B5EA8593224924F0000DEB8F /* FeedVC.swift in Sources */,
