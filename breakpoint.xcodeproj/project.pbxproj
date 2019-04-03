@@ -25,6 +25,7 @@
 		B58CB7B1224D01C9003A2258 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7B0224D01C9003A2258 /* CreatePostVC.swift */; };
 		B58CB7B3224D0D07003A2258 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7B2224D0D07003A2258 /* UIViewExt.swift */; };
 		B58CB7B5224D34C3003A2258 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58CB7B4224D34C3003A2258 /* FeedCell.swift */; };
+		B5A0660A225425D100AA76FB /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A06609225425D100AA76FB /* UIViewControllerExt.swift */; };
 		B5EA8591224924F0000DEB8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8590224924F0000DEB8F /* AppDelegate.swift */; };
 		B5EA8593224924F0000DEB8F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8592224924F0000DEB8F /* FeedVC.swift */; };
 		B5EA8595224924F0000DEB8F /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA8594224924F0000DEB8F /* GroupsVC.swift */; };
@@ -55,6 +56,7 @@
 		B58CB7B0224D01C9003A2258 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		B58CB7B2224D0D07003A2258 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		B58CB7B4224D34C3003A2258 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		B5A06609225425D100AA76FB /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		B5EA858D224924F0000DEB8F /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EA8590224924F0000DEB8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5EA8592224924F0000DEB8F /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				B58CB7B2224D0D07003A2258 /* UIViewExt.swift */,
+				B5A06609225425D100AA76FB /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				B58CB7AF224CFC43003A2258 /* MeVC.swift in Sources */,
 				B57CD454225166060099754F /* GroupCell.swift in Sources */,
 				B520514F224B0C01003D5505 /* AuthVC.swift in Sources */,
+				B5A0660A225425D100AA76FB /* UIViewControllerExt.swift in Sources */,
 				B5EA8595224924F0000DEB8F /* GroupsVC.swift in Sources */,
 				B546292F22517B26006CE613 /* GroupFeedVC.swift in Sources */,
 				B546292D22517AAF006CE613 /* GroupFeedCell.swift in Sources */,
